@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px;
+    background: linear-gradient(
+        -135deg,
+        rgb(6, 3, 20),
+        rgb(19, 1, 1)
+    )
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 40%;
+    height: 60vh;
+    align-items: center;
+}
+
+button {
+    height: 45px;
+    max-width: 110px;
+    font-size: 2rem;
+    color:white;
+    background: linear-gradient(
+        60deg,
+        blue,
+        rgb(0, 110, 173)
+    );
+    border-radius: 20%;
+    border: transparent;
+}
+
+button:hover {
+    box-shadow: 2px 2px 4px;
+    cursor: pointer;
+}
+
+.hidden {
+    position: absolute;
+    font-size: 1.4rem;
+    opacity: 0;
+}
+
+.yes {
+    color: white;
+    
+}
+
+.no:active {
+    translate: 0% 200%;
+
+    .hidden {
+        opacity: 1;
+    }
+}
